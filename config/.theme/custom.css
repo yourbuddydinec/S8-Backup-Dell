@@ -1,0 +1,266 @@
+:root { /* Edit the hex code here to change the colors easily as you like */
+  --bg-color: rgba(42,213,216,0.55); /* Title Bars for sections and section bodies and unactive buttons */
+  --icon-color: #2fe3e6; /* Background and active buttons */
+  --icon-color2: #ff6c11; /* Background and active buttons */
+  --color1: #e000ff; /* Left and top Main Bars plus reprint button */
+  --color2: rgba(48,33,87,0.95); /* Left and top Main Bars plus reprint button */
+  --color3: rgba(145,0,82,0.76); /* Left and top Main Bars plus reprint button */
+  --color3a: rgba(145,0,82,0.0); /* Left and top Main Bars plus reprint button *
+  --color4: #ff0000; /* Left and top Main Bars plus reprint button */
+  --text-color: #ff6c11; /* most text besides major console stuff which is changed using fluidd main color changer */
+  --macro-text-color: #2fe3e6; /* Text color for macro buttons */
+  --logo-size: 150px;
+}
+
+/* for some reason the macro text variable doesnt work. You have to edit this part directly */
+[class*="macro"] .v-btn--has-bg .v-btn__content {
+    color: var(--macro-text-color) !important;
+}
+
+/* Panel Top Right Buttons */
+.v-btn--icon {
+    background-color: var(--color3) !important;
+        border-radius: 10px!important;
+}
+
+/* Panel Top Right (left) Buttons */
+.v-btn--tile {
+    background-color: var(--color3) !important;
+    border-radius: 10px!important;
+    
+}
+
+/* Klipper logo color */
+.nav-logo path {
+    fill: var(--text-color) !important;
+}
+
+/* Z offset bar left */
+.order-0 .v-size--small {
+    background-color: var(--color3) !important;
+}
+
+/* Z offset bar right */
+.d-flex ._btn-qs {
+    background-color: var(--color3) !important;
+}
+
+/* Extrude / Retract number bars */
+._btn-qs.v-size--default {
+    background-color: var(--color3) !important;
+}
+
+/* active selectable button (numbers) */
+.v-btn--active {
+    background-color: var(--color3) !important;
+}
+
+
+/* set temperature text color */
+.theme--dark.v-input, .theme--dark.v-input input, .theme--dark.v-input textarea {
+    color: var(--text-color) !important;
+}
+
+
+
+/* build version text color */ 
+.v-application .text-body-2, .v-application .text-button {
+    font-size: .875rem!important;
+    font-family: Roboto,sans-serif!important;
+    color: var(--text-color) !important;
+    text-shadow: 1px 1px 0px var(--text-color), 0 0 50px var(--text-color), 0 0 3px white, 0 1px var(--text-color);
+}
+
+.align-center .v-btn--is-elevated .v-btn__content span {
+   color: var(--text-color) !important; 
+}
+
+.col-12 > .theme--dark .v-size--small .v-btn__content span {
+    color: var(--text-color) !important;
+}
+
+.px-0 .v-btn__content {
+    color: var(--text-color) !important;
+}
+
+.v-size--small.primary {
+    background-color: var(--color3) !important;
+}
+
+
+.v-application .body-2 {
+    color: var(--text-color) !important;
+}
+
+.v-application .warning {
+    background-color: var(--color3) !important;
+}
+
+/*file name color*/ 
+.v-data-table>.v-data-table__wrapper>table>tbody>tr>td, .v-data-table>.v-data-table__wrapper>table>tfoot>tr>td, .v-data-table>.v-data-table__wrapper>table>thead>tr>td {
+    font-size: .875rem;
+    height: 48px;
+    color: var(--text-color) !important;
+}
+
+
+
+/*toolbar title*/ 
+.v-toolbar__title {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--text-color) !important;
+    text-shadow: 1px 1px 0px var(--color1), 0 0 5px rgb(0,0,0), 0 0 3px rgb(0,0,0), 0 1px rgb(255,255,255);
+}
+
+/*Unclickable console text*/
+.theme--dark.v-application .text--primary {
+    color: var(--text-color) !important;
+}
+
+/* left panel text*/
+.v-list-item__title {
+    color: var(--text-color) !important;
+}
+
+/* text input slot */
+.v-input__slot {
+    background-color: var(--color3) !important;
+    border: none!important;
+    box-shadow: none!important;
+}
+   
+
+/* console page body background /*/
+.col.pt-0 {
+    background-color: var(--color2) !important;
+    border-radius: 15px!important;
+}
+
+.mt-3 .col {
+    background-color: var(--color2) !important;
+    border-radius: 15px!important;
+    
+}
+
+/* background color*/ 
+.v-application .mx-auto {
+    background-color: var(--bg-color) !important;
+}
+
+/* Progress circle, amount to go*/
+.v-progress-circular__underlay {
+    stroke: var(--color4) !important;
+}
+
+/**/
+.webcamImage {
+    background-color: transparent!important;
+    margin-bottom: -8px!important;
+    overflow: hidden;
+}
+/**/
+.webcamFpsOutput {
+    bottom: -10px!important;
+    right: -10px!important;
+    background-color: rgba(0,0,0,0.33)!important;
+    backdrop-filter: blur(25px);
+    border-radius: 10px;
+    
+}
+
+/* Temperature Chat Text */
+x-vue-echarts text{
+    stroke: var(--text-color) !important;
+    fill-opacity: 2 !important;
+}
+
+/* icon color */
+.v-icon__svg {
+    color: var(--icon-color) !important;
+}
+
+/* emergency button color */
+.emergency-button,.error--text .d-md-inline, 
+.emergency-button .v-icon__svg {
+    background-color: #ff0000 !important;
+    border-color: #ff0000 !important;
+    color: var(--color2) !important;
+}
+
+/* Panel Color */
+.theme--dark.v-sheet {
+    background-color: var(--color2) !important;
+    border-radius: 15px!important;
+    
+}
+
+/* Input Bar and Button Roundness 8*/
+.v-input__slot {
+    border-radius: 10px!important;
+    
+}
+
+/* Toolhead Home Buttons */
+.col-6 .w-100, .v-btn--tile.flex-grow-1, .btnMinWidthAuto.warning {
+    background-color: var(--color3) !important;
+}
+ /* Potion and "default" text */
+.text-no-wrap {
+    color: var(--text-color) !important;
+}
+
+/* Small Bracketed Text */
+.v-text-field .v-label {
+    color: var(--text-color) !important;
+    background-color: var(--color3) !important;
+    border-radius: 5px!important;
+}
+
+/* Heatbreak coling fan and filament runout sensor text */
+.pb-3  span {
+    color: var(--text-color) !important;
+}
+
+/* Current Mesh Tab Text */
+.row.px-3 .col {
+    color: var(--text-color) !important;
+}
+
+/* left panel image background */
+.v-navigation-drawer {
+    background-color: var(--color3) !important;
+}
+
+.v-btn__content .align-center path {
+    color: var(--icon-color2) !important;
+    
+}
+
+.px-0 .v-btn__content path {
+    color: var(--icon-color2) !important;
+}
+
+.v-btn__content {
+    color: var(--text-color) !important;
+}
+
+.v-application--wrap .v-navigation-drawer {
+    height: 100vh !important;
+    max-height: calc(100%) !important;
+    background-color: var(--bg-color) !important;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 34px 5px rgba(0,0,0,0.64);
+    background-image: none !important;
+}
+
+.v-text-field .v-label{
+    background-color: var(--color3a) !important;    
+}
+
+.v-text-field .v-label--active{
+    background-color: var(--color3) !important;    
+}
+

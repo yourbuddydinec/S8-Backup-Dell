@@ -1,0 +1,15 @@
+.env
+.moonraker.uuid
+moonraker.asvc
+secrets.conf
+/backup
+/certs
+/comms
+/database
+/gcodes
+/logs
+/misc
+/systemd
+/timelapse
+/timelapse_frames
+
